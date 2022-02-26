@@ -12,17 +12,45 @@ const Body = styled.div`
 
 const HeadContainer = styled.div`
     width: 100%;
-    height: 50%;
+    height: 100vh;
     justify-content: center;
-    padding: 10px;
+    overflow: hidden;
     font-family: 'Lato';
     color: ${({theme}) => theme.font};
-    font-size: 40px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+const InfoContainer = styled.div`
+    position: absolute;
+    z-index: 1;
+    self-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        margin-top: 50px;
+       font-size: 60px;
+       color: ${({theme}) => theme.font};
+       transition: 0.2s all ease-in;
+    }
+
+    @media (max-width: 800px) {
+        h1{ 
+            font-size: 40px;
+        }
+    }
 `;
 
 const SwitchHandler = styled.div`
     width: 100%;
     max-width: 75px;
+    position: absolute;
+    z-index: 1;
     margin: auto;
     margin-right: 0;
     display: flex;
@@ -62,7 +90,6 @@ const ScrollContainer = styled.div`
     position: relative;
     &::-webkit-scrollbar {
         width: 10px;
-        height: 500px;
     }
     &::-webkit-scrollbar-track {
         background: ${({theme}) => theme.medium};
@@ -81,6 +108,7 @@ const components = {
     Switch,
     ButtonSwitch,
     SwitchHandler,
+    InfoContainer,
 }
 
 export default components;
