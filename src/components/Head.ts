@@ -1,18 +1,9 @@
 import styled from 'styled-components';
 
-const Body = styled.div`
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-    background-color: ${({theme}) => theme.dark};
-    transition: 0.2s all ease-in;
-`;
-
 const HeadContainer = styled.div`
     width: 100%;
     height: 100vh;
+    max-height: 100vh;
     justify-content: center;
     overflow: hidden;
     font-family: 'Lato';
@@ -21,11 +12,12 @@ const HeadContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 `;
 
 const InfoContainer = styled.div`
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     self-align: center;
     font-weight: bold;
     display: flex;
@@ -46,13 +38,42 @@ const InfoContainer = styled.div`
     }
 `;
 
+interface Props1{
+    scrollHeight: number;
+}
+
+const navBar = styled.nav<Props1>`
+    position: fixed;
+    top: 0;
+    background-color: ${({scrollHeight}) => scrollHeight > 20 ? ({theme}) => theme.medium : "transparent"};
+    width: 100%;
+    height: 80px;
+    padding-left: 50px;
+    font-size: 20px;
+    z-index: 3;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+`;
+
+const navBarLogo = styled.div`
+    height: 80px;
+    line-height: 80px;
+    color: ${({theme}) => theme.primary};
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Lato';
+`;
+
 const SwitchHandler = styled.div`
     width: 100%;
     max-width: 75px;
     position: absolute;
     z-index: 1;
-    margin: auto;
-    margin-right: 0;
+    right: 80px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -103,12 +124,13 @@ const ScrollContainer = styled.div`
 
 const components = {
     HeadContainer,
-    Body,
     ScrollContainer,
     Switch,
     ButtonSwitch,
     SwitchHandler,
     InfoContainer,
+    navBarLogo,
+    navBar
 }
 
 export default components;
