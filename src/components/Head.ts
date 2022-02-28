@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const HeadContainer = styled.div`
     width: 100%;
     height: 100vh;
-    max-height: 100vh;
     justify-content: center;
     overflow: hidden;
     font-family: 'Lato';
@@ -13,6 +12,11 @@ const HeadContainer = styled.div`
     flex-direction: column;
     align-items: center;
     z-index: 1;
+    margin 0;
+    
+    @media (max-width: 800px) {
+        top 0;
+    }
 `;
 
 const InfoContainer = styled.div`
@@ -56,6 +60,12 @@ const navBar = styled.nav<Props1>`
     flex-direction: row;
     flex: 1;
     align-items: center;
+
+    p{
+        position: fixed;
+        right: 120px;
+        top: 0;
+    }
 `;
 
 const navBarLogo = styled.div`
