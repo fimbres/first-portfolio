@@ -43,9 +43,8 @@ const ContactContainer = styled.div`
 `;
 
 const LinksContainer = styled.div`
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 3fr;
+    display: flex;
+    margin: 15px;
 
     a{
         margin: 3px;
@@ -77,18 +76,23 @@ const ContainerInferior = styled.div`
 `;
 
 const ContainerAux = styled.div`
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex:
     width: 100%;
+    justify-content: space-between;
+    flex: 2;
 `;
 
 const CopyRight = styled.div`
-    display: grid;
-    margin: 10px;
+    display: flex;
+    margin: 20px;
     font-size: 15px;
     font-weight: bold;
-    justify-content: center;
     color: ${({theme}) => theme.font};
+    transition: all 0.2s ease-out;
+
+    &:hover{
+        color: ${({theme}) => theme.primary};
+    }
 `;
 
 const Components = {

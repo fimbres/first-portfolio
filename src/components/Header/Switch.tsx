@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { components } from './';
+import { components } from '..';
 
 interface Props{
   setThemes: React.Dispatch<React.SetStateAction<string>>;

@@ -32,18 +32,3 @@
         width: 200px;
     }
 }
-
-.BrainhubCarousel__arrows{
-    background-color: #FF0E48 !important;
-    border-radius: 15px;
-    margin: 10px !important;
-    transition: 0.2s all ease-in;
-}
-
-.BrainhubCarousel__arrows:hover{
-    background-color: #e70036 !important;
-}
-
-.BrainhubCarousel__arrows > span{
-    border-color: #fff !important;
-}

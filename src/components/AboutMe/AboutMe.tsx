@@ -1,8 +1,7 @@
-import React from 'react';
 import Components from './Body';
-import Image from '../media/photo.png';
-import CVIngles from '../media/CV/IsaacFimbres_Resume.pdf';
-import CVEspanol from '../media/CV/IsaacFimbres_Curriculum.pdf';
+import Image from '../../media/photo.png';
+import CVIngles from '../../media/CV/IsaacFimbres_Resume.pdf';
+import CVEspanol from '../../media/CV/IsaacFimbres_Curriculum.pdf';
 
 export default function AboutMe() {
   const Descargar = () => {
