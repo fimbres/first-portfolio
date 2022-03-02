@@ -9,6 +9,8 @@ const Container = styled.div`
     padding; 100px 0 100px 0;
     font-family: 'Lato';
 
+    margin-bottom: 100vh;
+
     @media (max-width: 800px){
         flex-direction: column;
     }
@@ -54,6 +56,8 @@ const CarouselContainer = styled.div`
     vertical-align: center;
     justify-content: center;
     margin-top: 200px;
+    transition: 0.2s all ease-in;
+    margin-right: 10px;
 
     @media (max-width: 800px){
         margin-top: -40px;
@@ -67,6 +71,7 @@ const SlideContainer = styled.div`
     border-radius: 20px;
     overflow: hidden;
     position: relative;
+    margin: 0 10px 0 10px;
 
     img{
         height: 100%;
@@ -90,6 +95,7 @@ const SlideDescription = styled.div`
     left: 0;
     widht: 100%;
     opacity: 0.8;
+    transition: 0.2s all ease-in;
 
     span{
         color: #fff;

@@ -6,6 +6,7 @@
     object-fit: cover;
     position: absolute;
     z-index: 0;
+    transition: 0.2s all ease-in;
 }
 
 .vlight{

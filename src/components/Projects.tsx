@@ -1,7 +1,6 @@
 import React from 'react';
 import Components from './Slider';
-import Carousel, { arrowsPlugin } from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
+import Carousel from 'styled-components-carousel';
 import Slides from './Slide';
 import '../App.css';
 
@@ -14,15 +13,14 @@ export default function Projects() {
         </Components.Title>
         <Components.CarouselContainer>
             <Carousel
-            plugins={[
-                'infinite',
-                'arrows'
-            ]}
-            slides={Slides}
-            itemWidth={400}
-            animationSpeed={200}
-            offset={50}
-            />
+              center
+              infinite
+              showArrows
+              slidesToShow={3}
+              centerPadding={0}
+            >
+              {Slides.map(slide => (slide))}
+            </Carousel>
         </Components.CarouselContainer>
     </Components.Container>
   )

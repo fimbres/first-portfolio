@@ -33,11 +33,12 @@ const InfoContainer = styled.div`
        font-size: 60px;
        color: ${({theme}) => theme.font};
        transition: 0.2s all ease-in;
+       font-weight: bold;
     }
 
     @media (max-width: 800px) {
         h1{ 
-            font-size: 40px;
+            font-size: 30px;
         }
     }
 `;
