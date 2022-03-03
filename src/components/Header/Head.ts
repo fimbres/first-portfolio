@@ -41,6 +41,12 @@ const InfoContainer = styled.div`
             font-size: 30px;
         }
     }
+
+    @media (max-height: 600px){
+        h1{ 
+            font-size: 40px;
+        }
+    }
 `;
 
 interface Props1{
@@ -117,25 +123,8 @@ const ButtonSwitch = styled.button<Props>`
     outline: none;
 `;
 
-const ScrollContainer = styled.div`
-    overflow-y: auto;
-    position: relative;
-    &::-webkit-scrollbar {
-        width: 10px;
-    }
-    &::-webkit-scrollbar-track {
-        background: ${({theme}) => theme.medium};
-      }
-    &::-webkit-scrollbar-thumb {
-        background-color: ${({theme}) => theme.toggle};
-        border-radius: 20px;
-        border: 3px solid ${({theme}) => theme.medium};
-      }
-`;
-
 const components = {
     HeadContainer,
-    ScrollContainer,
     Switch,
     ButtonSwitch,
     SwitchHandler,

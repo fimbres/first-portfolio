@@ -10,7 +10,7 @@ const Container = styled.div`
     font-family: 'Lato';
     padding: 100px 0 100px 0;
 
-    @media (max-width: 800px){
+    @media (max-width: 900px){
         &{
             padding: 30px 0 70px 0;
             flex-direction: column;
@@ -20,11 +20,15 @@ const Container = styled.div`
 
 const Texto = styled.h2`
     display: none;
+    color: ${({theme}) => theme.primary};
 
-    @media (max-width: 800px){
+    @media (max-width: 900px){
         display: flex;
         font-size: 40px;
-        color: ${({theme}) => theme.primary};
+    }
+    @media (max-width: 900px){
+        display: flex;
+        font-size: 30px;
     }
 `;
 
@@ -47,22 +51,45 @@ const InfoContainer = styled.div`
         color: ${({theme}) => theme.font};
     }
 
-    @media (max-width: 800px){
-        &{
-            width: 80%;
-            height: 40%;
-            padding: 0;
-            margin-top: 70px;
+    @media (max-width: 900px){
+        width: 80%;
+        height: 40%;
+        padding: 0;
+        margin-top: 90px;
 
-            h2{
-                display: none;
-            }
+        h2{
+            display: none;
+        }
 
-            p{
-                font-size: 20px;
-                line-height: 1.25;
-                color: ${({theme}) => theme.font};
-            }
+        p{
+            font-size: 20px;
+            line-height: 1.25;
+        }
+    }
+
+    @media (max-width: 600px){
+        width: 80%;
+        margin-top: 60px;
+        h2{
+            display: none;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.20;
+        }
+    }
+
+    @media (max-width: 400px){
+        width: 80%;
+        margin-top: 40px;
+        p{
+            font-size: 14px;
+        }
+    }
+
+    @media (max-height: 600px){
+        p{
+            font-size: 22px;
         }
     }
 `;
@@ -79,16 +106,25 @@ const ImageContainer = styled.div`
         border-radius: 50%;
     }
 
-    @media (max-width: 800px){
-        &{
-            width: 28%;
-            align-self: center;
-            padding: 0;
+    @media (max-width: 900px){
+        width: 25%;
+        align-self: center;
+        padding: 0;
+        margin-bottom: 5px;
 
-            img{
-                height: 100%;
-                width: 100%;
-            }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 400px){
+        align-self: center;
+        width: 130px;
+
+        img{
+            height: 100%;
+            width: 100%;
         }
     }
 `;
@@ -112,26 +148,31 @@ const Button = styled.button`
         color: ${({theme}) => theme.primary};
     }
 
-    @media (max-width: 800px){
-        &{
-            width: 100%;
-            margin-top: 10px;
-        }
+    @media (max-width: 900px){
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 400px){
+        height: 30px;
     }
 `;
 
 const ButtonsContainer = styled.div`
-    margin-top: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 10px;
 
-    @media (max-width: 800px){
-        &{
-            flex-direction: column;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
+    @media (max-width: 900px){
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 400px){
+        padding: 5px;
+        margin-top: 5px;
     }
 `;
 

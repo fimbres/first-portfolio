@@ -32,3 +32,9 @@
         width: 200px;
     }
 }
+
+@media (max-height: 600px){
+    .Logo{ 
+        width: 200px;
+    }
+}

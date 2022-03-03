@@ -1,4 +1,3 @@
-import React from 'react'
 import Components from './Foot';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import Form from './Form';
@@ -8,7 +7,7 @@ export default function Footer() {
       <Components.ContainerFooter>
           <Components.InfoContainer>
               <h3>Contact Me!</h3>
-              <p>I would love to hear about any suggestions about my portfolio, or about your project if you want to hire me.</p>
+              <p>I would like to hear any suggestions about my portfolio, or about your project if you want to hire me.</p>
           </Components.InfoContainer>
           <Components.ContactContainer>
               <Form />

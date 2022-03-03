@@ -19,27 +19,80 @@ const InfoContainer = styled.div`
     width 80%;
     align-self: center;
     margin-top: 70px;
-    height: 20%;
+    height: 15%;
 
     p{
         font-size: 20px;
         margin-top: -20px;
+        transition: all 0.2s ease-out;
         color: ${({theme}) => theme.font};
     }
 
     h3{
         font-size: 40px;
+        transition: all 0.2s ease-out;
         color: ${({theme}) => theme.primary};
+    }
+
+    @media (max-width: 800px){
+        p{
+            font-size: 18px;
+            text-align: center;
+        }
+    
+        h3{
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+    @media (max-width: 600px){
+        
+        p{
+            font-size: 16px;
+        }
+        h3{
+            font-size: 30px;
+        }
+    }
+    @media (max-width: 400px){
+        
+        p{
+            font-size: 14px;
+        }
+        h3{
+            font-size: 30px;
+        }
+    }
+    @media (max-height: 600px){
+        
+        p{
+            font-size: 16px;
+        }
+        h3{
+            font-size: 30px;
+        }
     }
 `;
 
 const ContactContainer = styled.div`
-    margin: 0 auto;
-    padding: 100px 0 100px 0px;
-    margin-bottom: 20px;
-    width: 70%;
-    height: 60%;
+    display: flex;
+    padding: 80px 0 60px 0px;
+    width: 80%;
+    height: 70%;
     justify-content: center;
+    align-self: center;
+    @media (max-width: 600px){
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
+    @media (max-width: 400px){
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+    @media (max-height: 600px){
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
 `;
 
 const LinksContainer = styled.div`
@@ -59,7 +112,7 @@ const LinksContainer = styled.div`
 `;
 
 const ContainerInferior = styled.div`
-    height: 20%;
+    height: 15%;
     width: 100%;
     bottom: 0;
     right: 0;
@@ -67,11 +120,34 @@ const ContainerInferior = styled.div`
     background-color: ${({theme}) => theme.medium};
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    justify-content: center;
 
     p{
         color: ${({theme}) => theme.font};
         text-align: center;
         font-size: 23px;
+    }
+
+    @media (max-width: 800px){
+        p{
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 500px){
+        p{
+            font-size: 15px;
+        }
+    }
+    @media (max-width: 400px){
+        p{
+            font-size: 13px;
+        }
+    }
+    @media (max-height: 600px){
+        p{
+            font-size: 13px;
+        }
     }
 `;
 
@@ -79,12 +155,11 @@ const ContainerAux = styled.div`
     display: flex:
     width: 100%;
     justify-content: space-between;
-    flex: 2;
 `;
 
 const CopyRight = styled.div`
     display: flex;
-    margin: 20px;
+    margin-top: 25px;
     font-size: 15px;
     font-weight: bold;
     color: ${({theme}) => theme.font};

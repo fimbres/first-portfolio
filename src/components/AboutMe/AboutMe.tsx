@@ -24,8 +24,8 @@ export default function AboutMe() {
         </Components.ImageContainer>
         <Components.InfoContainer>
           <h2>About Me</h2>
-          <p>Full stack web and mobile developer with background knowledge of MEAN Stack, MERN Stack and .NET framework in the back end.
-          <br/><br/>I have developed systems and applications with high efficiency.</p>
+          <p>I am a full stack software developer with background knowledge of MEAN Stack, MERN Stack and .NET framework development.
+          <br/><br/>I develop software focused on user experience, usability, visual harmony, but with a special focus on code efficiency and good practices.</p>
           <Components.ButtonsContainer>
             <Components.Button onClick={() => Download()}>See My Resume</Components.Button>
             <Components.Button onClick={() => Descargar()}>Ver Mi CV</Components.Button>

@@ -54,7 +54,6 @@ export const useForm = (initialForm : Form, validateForm : (form: Form) => Error
             ...form,
             [name]: value,
         });
-        console.log(form);
     };
 
     return {

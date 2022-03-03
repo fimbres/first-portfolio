@@ -8,7 +8,7 @@ export default function Projects() {
     <Components.Container>
         <Components.Title>
             <h3>My Projects</h3>
-            <p>These are some of my projects developed</p>
+            <p>These are some of the projects I have developed.</p>
         </Components.Title>
         <Components.CarouselContainer>
             <Carousel
@@ -20,35 +20,61 @@ export default function Projects() {
               showIndicator
               breakpoints={[
                 {
-                    size: 500,
-                    settings: {
-                        slidesToShow: 1,
-                        showArrows: true,
-                        swipeable: true,
-                        center: true,
-                        infinite:true,
-                    },
-                },
-                {
-                  size: 700,
+                  size: 372,
                   settings: {
-                      slidesToShow: 2,
-                      showArrows: true,
-                      showIndicator: true,
-                      center: true,
-                      infinite:true,
+                    center: true,
+                    infinite:true,
+                    showArrows:false,
+                    showIndicator: true,
+                    swipeable: true,
+                    slidesToShow:1,
+                    centerPadding:10,
                   },
               },
                 {
-                    size: 1000,
-                    settings: {
-                        slidesToShow: 2,
-                        showArrows: true,
-                        showIndicator: true,
-                        center: true,
-                        infinite:true,
-                    },
-                },
+                  size: 500,
+                  settings: {
+                    center: true,
+                    infinite:true,
+                    showArrows:true,
+                    showIndicator: true,
+                    slidesToShow:1,
+                    centerPadding:10,
+                  },
+              },
+                {
+                  size: 780,
+                  settings: {
+                    center: true,
+                    infinite:true,
+                    showArrows:true,
+                    showIndicator: true,
+                    slidesToShow:2,
+                    centerPadding:10,
+                  },
+              },
+                {
+                  size: 1050,
+                  settings: {
+                    center: true,
+                    infinite:true,
+                    showArrows:true,
+                    showIndicator: true,
+                    slidesToShow:3,
+                    centerPadding:10,
+                  },
+              },
+                {
+                  size: 1270,
+                  settings: {
+                    center: true,
+                    infinite:true,
+                    showArrows:true,
+                    showIndicator: true,
+                    slidesToShow:2,
+                    centerPadding:10,
+                  },
+              },
                 {
                     size: 1500,
                     settings: {

@@ -11,7 +11,7 @@ const Container = styled.div`
     transition: 0.2s all ease-in;
     margin-bottom: 100vh;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1270px){
         flex-direction: column;
     }
 `;
@@ -31,20 +31,41 @@ const Title = styled.div`
     }
     p{
         width: 80%;
-        font-size: 20px;
+        font-size: 30px;
         color: ${({theme}) => theme.font}
     }
 
-    @media (max-width: 1000px){
+    @media (max-width: 1270px){
         height: 30%;
         width: 60%;
         align-self: center;
         h3{
+            margin-top: -30px;
             text-align: center;
         }
         p{
+            margin-top: 0;
+            font-size: 18px;
             text-align: center;
             width: 100%;
+        }
+    }
+    @media (max-width: 400px){
+        height: 25%;
+        margin-bottom: 10px;
+        h3{
+            font-size: 30px;
+        }
+        p{
+            margin-top: -10px;
+            font-size: 15px;
+        }
+    }
+    @media (max-height: 600px){
+        height: 25%;
+        p{
+            margin-top: -10px;
+            font-size: 18px;
         }
     }
 `;
@@ -59,16 +80,35 @@ const CarouselContainer = styled.div`
     transition: 0.2s all ease-in;
     margin-right: 10px;
 
-    @media (max-width: 1000px){
-        margin-top: -40px;
-        height: 70%;
-        width: 100%;
+    
+    @media (max-width: 1500px){
+        width: 55%;
     }
-    @media (max-width: 700px){
-        height: 70%;
-        width: 85%;
-        margin: -80px 20px 20px 20px;
+    @media (max-width: 1270px){
+        margin-top: -40px;
+        width: 95%;
         align-self: center;
+    }
+    @media (max-width: 1050px){
+        width: 90%;
+    }
+    @media (max-width: 780px){
+        width: 60%;
+        margin: -90px 20px 20px 20px;
+        align-self: center;
+    }
+    @media (max-width: 650px){
+        width: 80%;
+    }
+    @media (max-width: 500px){
+        width: 84%;
+        margin: -90px 20px 20px 20px;
+        align-self: center;
+    }
+    @media (max-height: 600px){
+        width: 70%;
+        height: 70%;
+        margin: -70px 20px 20px 20px;
     }
 `;
 
